@@ -1,0 +1,17 @@
+button {
+    padding: 1rem;
+    background: rgb(143, 77, 205);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+}
+
+button:disabled {
+    color: #fff;
+    background: #cecece;
+    cursor: not-allowed;
+}
