@@ -8,9 +8,8 @@ export class Home extends Component {
 
   hendleClick = () => {
     this.setState(
-      (prevState, prevProps) => {
-        console.log('PREVPROPS', this.state.counter)
-        return { counter: prevState.counter + prevProps.incrementNumber }
+      ({ counter }, { incrementNumber }) => {
+        return { counter: counter + incrementNumber }
       },
       () => {
         console.log('POST', this.state.counter)
